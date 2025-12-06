@@ -1,0 +1,5 @@
+{
+  "name": "Ward Representative Profile",
+  "description": "A web application for residents to view their ward representative's profile and report community problems through a problem gallery.",
+  "requestFramePermissions": []
+}
