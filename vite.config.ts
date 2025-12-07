@@ -6,6 +6,16 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       base: '/Election-website-/',
+      build: {
+        outDir: 'dist',
+        assetsDir: 'assets',
+        emptyOutDir: true,
+        rollupOptions: {
+          output: {
+            manualChunks: undefined,
+          },
+        },
+      },
       server: {
         port: 3000,
         host: '0.0.0.0',
@@ -19,6 +29,7 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
-      }
+      },
+      publicDir: 'public',
     };
 });
