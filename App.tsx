@@ -44,10 +44,10 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen font-sans w-full overflow-x-hidden">
-      <div className="w-full sm:max-w-md mx-auto bg-white shadow-lg sm:shadow-none min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
+      <div className="max-w-md mx-auto bg-white min-h-screen">
         <Header title={`వార్డు ${representativeData.wardNumber}`} subtitle={representativeData.villageName} />
-        <main className="p-4 space-y-8 pb-8">
+        <main className="p-4 space-y-8">
           <RepresentativeCard representative={representativeData} />
           <VoteCtaSection representative={representativeData} />
           <AboutSection representative={representativeData} />
